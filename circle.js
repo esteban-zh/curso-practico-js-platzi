@@ -14,7 +14,7 @@ function calculatePerimeterCircle() {
     const perimeterC = perimeterCircle(radius);
     const resultCircle = document.getElementById("result-circle");
 
-    resultCircle.append(`Perimeter circle= ${perimeterC} cm`);
+    resultCircle.innerHTML = `Perimeter circle= ${perimeterC} cm`;
 
     return resultCircle;
 }
@@ -23,7 +23,8 @@ const calculateAreaCircle = () => {
     const radius = document.getElementById("input-circle").value;
 
     const areaC = areaCircle(radius);
-    const resultEtiqueta = document.getElementById("result-circle");
+    const resultArea = document.getElementById("result-circle");
+    resultArea.innerHTML = `Area circle = ${areaC}cm^2`;
 
-    return resultEtiqueta.append(`Area circle = ${areaC}cm^2`);
+    return resultArea;
 } 

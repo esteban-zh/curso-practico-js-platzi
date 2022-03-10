@@ -16,8 +16,9 @@ function calculatePerimeterRectangle(){
     const perimeter = perimeterRectangle(height, base);
 
     const showPerimeter = document.getElementById("result-rectangle");
+    showPerimeter.innerHTML = `perimeter rectangle = ${perimeter} cm`;
 
-    return showPerimeter.append(`perimeter rectangle = ${perimeter} cm`);
+    return showPerimeter;
 }
 
 function calculateAreaRectangle(){
@@ -29,7 +30,8 @@ function calculateAreaRectangle(){
     const area = areaRectangle(height, base);
 
     const showArea = document.getElementById("result-rectangle");
+    showArea.innerHTML = `area rectangle = ${area} cm^2`;
 
-    return showArea.append(`area rectangle = ${area} cm^2`);
+    return showArea;
 
 }

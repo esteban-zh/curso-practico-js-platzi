@@ -23,7 +23,7 @@ function calculatePerimeter() {
 
     const resultPerimeter = document.getElementById("result-triangle");
 
-    resultPerimeter.append(` Perimeter = ${perimeterTriangle} cm`)
+    resultPerimeter.innerHTML = ` Perimeter = ${perimeterTriangle} cm`;
 
     return resultPerimeter;
 }
@@ -48,7 +48,7 @@ function calculateArea() {
     const areaTriangle = getAreaTriangle(sideA, sideB, sideC, semiPerimeter);
 
     resultArea = document.getElementById("result-triangle");
-    resultArea.append(`Area triangle = ${areaTriangle} cm^2`);
+    resultArea.innerHTML = `Area triangle = ${areaTriangle} cm^2`;
 
     return resultArea;
 
