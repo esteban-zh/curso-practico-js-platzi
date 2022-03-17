@@ -1,4 +1,5 @@
 let list = [];
+let objList = {};
 
 const mitadList = parseInt(list.length / 2);
 let mediana = 0;
@@ -25,6 +26,8 @@ function isPar(number) {
 function calculateMediana() {
     let listLenght = list.length;
     let mitadList = parseInt(listLenght/2);
+    const resultMediana = document.getElementById("result-prome");
+
     list.sort((a, b) => a - b);
 
     if (isPar(listLenght)) {
@@ -32,11 +35,28 @@ function calculateMediana() {
         const element2 = parseFloat(list[mitadList - 1]);
 
         mediana = (element1 + element2)/2
-        return mediana;
+        resultMediana.innerHTML = mediana;
+        return resultMediana;
     } else {
         const element = list[mitadList];
         mediana = element;
-        return mediana;
+        resultMediana.innerHTML = mediana;
+        return resultMediana;
     }
+}
+
+function calculateModa() {
+    const resultModa = document.getElementById("result-moda");
+
+    list.map(function(elemento) {
+        if (objList[elemento]) {
+            objList[elemento] += 1;
+        } else {
+            objList[elemento] =  1;
+        }
+    })
+    let listConvert = Object.entries(objList).sort( (element1, element2) => element1[1] - element2[1] );
+    let moda = listConvert.pop();
+    resultModa.innerHTML = moda[0];
 }
 
