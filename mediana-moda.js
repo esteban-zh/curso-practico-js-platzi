@@ -34,7 +34,7 @@ function calculateMediana() {
         const element1 = parseFloat(list[mitadList]);
         const element2 = parseFloat(list[mitadList - 1]);
 
-        mediana = (element1 + element2)/2
+        mediana = (element1 + element2)/2;
         resultMediana.innerHTML = mediana;
         return resultMediana;
     } else {

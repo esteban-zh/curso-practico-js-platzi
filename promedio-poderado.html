@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1>CALCULAR PROMEDIO PONDERADO</h1>
+    <label for="each-number"> ingrese el numero 
+        <input type="number" id="each-number">
+    </label><br><br>
+    <label for="each-number"> ingrese el peso
+        <input type="number" id="each-peso">
+    </label><br><br>
+    <button type="button" onclick="addNumbers()">agregar numero y peso</button><br><br>
+    <table id="table-data">
+    </table>
+    <button type="button" onclick="calculatePonderado()">calcular promedio ponderado</button>
+    <p>promedio ponderado =  <p id="result-ponde"></p></p>
+
+
+    <script src="/promedio-ponderado.js"></script>
+  </body>
+</html>
