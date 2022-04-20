@@ -1,6 +1,5 @@
 let filaFinal = "<tr><th> NUMERO</th><th>PESO</th></tr>";
 let arrObjProme = [];
-// let lista = [];
 
 function addNumbers() {
     let tableList = {};
@@ -8,9 +7,6 @@ function addNumbers() {
     const number = document.getElementById("each-number").value;
     const peso = document.getElementById("each-peso").value;
     const resultTable = document.getElementById("result-table");
-
-    // lista.push([number, peso]);
-    // console.log ("esta seria la lista", lista)
 
     tableList[number] = peso;
 
@@ -31,10 +27,6 @@ function addNumbers() {
 }
 
 let arrObj = addNumbers();
-
-function calculate(){
- 
-}
 
 function calculatePonderado() {
 
